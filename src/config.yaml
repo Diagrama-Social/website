@@ -1,0 +1,72 @@
+site:
+  name: Diagrama Social
+  site: 'https://diagramasocial.org'
+  base: '/'
+  trailingSlash: false
+
+  googleSiteVerificationId: Er1xOmdfMVqk9S_zEYpFpSJwRhZDEj2ijA8krff-TVU
+
+# Default SEO metadata
+metadata:
+  title:
+    default: Diagrama Social
+    template: '%s — Diagrama Social'
+  description: "Un proyecto de divulgación y educación sobre ciencias sociales. Resúmenes de libros y artículos; lecciones sobre teorías, conceptos, metodologías y técnicas de investigación social; junto con análisis de casos. Todo explicado de forma más precisa y visual."
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Diagrama Social
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+  twitter:
+    handle: '@'
+    site: '@'
+    cardType: summary_large_image
+
+i18n:
+  language: es
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 6
+
+    post:
+      isEnabled: true
+      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      robots:
+        index: true
+
+    list:
+      isEnabled: true
+      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      robots:
+        index: true
+
+    category:
+      isEnabled: true
+      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      robots:
+        index: true
+
+    tag:
+      isEnabled: true
+      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      robots:
+        index: false
+
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: G-B2K3Q6WHLR # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'dark:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
