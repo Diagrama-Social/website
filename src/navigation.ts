@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink} from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -7,15 +7,15 @@ export const headerData = {
       links: [
         {
           text: 'Libros',
-          href: getPermalink('/resumenes/libros'),
+          href: getPermalink('/category/libros'),
         },
         {
           text: 'Capítulos',
-          href: getPermalink('resumenes/capitulos'),
+          href: getPermalink('category/capitulos'),
         },
         {
           text: 'Artículos',
-          href: getPermalink('resumenes/articulos'),
+          href: getPermalink('category/articulos'),
         },
       ],
     },
@@ -24,11 +24,11 @@ export const headerData = {
       links: [
         {
           text: 'Teorías y conceptos',
-          href: getPermalink('/landing/lead-generation'),
+          href: getPermalink('/category/teorias'),
         },
         {
           text: 'Métodos y técnicas',
-          href: getPermalink('/landing/sales'),
+          href: getPermalink('/category/metodos'),
         },
       ],
     },
@@ -37,11 +37,11 @@ export const headerData = {
       links: [
         {
           text: 'Ensayos',
-          href: getBlogPermalink(),
+          href: getPermalink('/category/ensayos'),
         },
         {
           text: 'Casos',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+          href: getPermalink('/category/casos'),
         },
       ],
     },
@@ -62,52 +62,17 @@ export const footerData = {
         { text: 'Pricing', href: '#' },
         { text: 'Resources', href: '#' },
       ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
+    }
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@DiagramaSocial' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Diagrama-Social' },
   ],
   footNote: `
-    Desarrollado por el <a class="text-green-500 underline dark:text-muted" href="https://labtecnosocial.org/">Lab TecnoSocial</a>
+    Desarrollado por el <a class="text-lab underline dark:text-lab dark:hover:text-gray-200" href="https://labtecnosocial.org/">Lab TecnoSocial</a>
   `,
 };

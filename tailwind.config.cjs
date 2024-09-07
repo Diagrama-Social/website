@@ -11,6 +11,7 @@ module.exports = {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        lab: '#00E17E'
       },
       fontFamily: {
         heading: ['Silom', ...defaultTheme.fontFamily.sans],

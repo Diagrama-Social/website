@@ -5,7 +5,7 @@ import Features from '~/components/widgets/Features.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Diagrama Social — Divulgación y educación en ciencias sociales',
   ignoreTitleTemplate: true,
 };
 ---
@@ -17,61 +17,36 @@ const metadata = {
     <Fragment slot="title"> Diagrama Social </Fragment>
 
     <Fragment slot="subtitle">
-      Un proyecto de divulgación y educación sobre ciencias sociales. Resúmenes de libros y artículos; lecciones sobre
-      teorías, conceptos, metodologías y técnicas de investigación social; junto con análisis de casos. Todo explicado
-      de forma más precisa y visual.
+      Un proyecto de divulgación y educación sobre ciencias sociales. Resúmenes de libros, capítulos y artículos;
+      lecciones sobre teorías sociales y métodos de investigación social; junto con análisis mediante ensayos y casos.
+      Todo explicado de forma más <span class="dark:text-primary">diagramática</span> (precisa y visual)
     </Fragment>
   </Hero>
 
   <Features
     id="features"
-    tagline="Diagramas"
     title="Contenido sobre"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Resumenes',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Resumenes de libros, capítulos y artículos de ciencias sociales: historia, economía, sociología, ciencia política, antropología y más',
+        icon: 'tabler:book',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Lecciones',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Lecciones sobre teorías sociales y métodos de investigación social: métodos cuantitativos, cualitativos, mixtos y más',
+        icon: 'tabler:school',
       },
       {
-        title: 'Best Practices',
+        title: 'Análisis',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Análisis mediante ensayos y casos de estudio: ensayos visuales, análisis de políticas públicas, análisis de datos, y más',
+        icon: 'tabler:binary-tree',
       },
     ]}
   />
 
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+  <BlogLatestPosts title="Nuestro blog" />
 </Layout>
